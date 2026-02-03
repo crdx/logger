@@ -7,11 +7,9 @@ linters:
     - depguard
     - dupword
     - err113
-    - errorlint
     - exhaustive
     - exhaustruct
     - forbidigo
-    - forcetypeassert
     - funlen
     - gochecknoglobals
     - gochecknoinits
@@ -21,7 +19,6 @@ linters:
     - gocyclo
     - godot
     - godox
-    - gosec
     - inamedparam
     - ireturn
     - lll
@@ -54,3 +51,7 @@ linters:
         - '-ST1000' # Incorrect or missing package comment [https://staticcheck.dev/docs/checks#ST1000]
         - '-ST1003' # Poorly chosen identifier             [https://staticcheck.dev/docs/checks#ST1003]
         - '-ST1006' # Poorly chosen receiver name          [https://staticcheck.dev/docs/checks#ST1006]
+formatters:
+  enable:
+    - gofmt
+    - goimports
